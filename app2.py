@@ -35,6 +35,6 @@ def handle_request(name):
         imagefile.save(timestr+'_'+filename)
         image_num = image_num + 1
     print("\n")
-    return "Image(s) Uploaded Successfully. Come Back Soon."
+    return "Welcome {}".format(name)
 
 app.run(host="0.0.0.0", port=5000, debug=True)
