@@ -20,8 +20,8 @@ def handle_request():
     print("\n")
     return "Image(s) Uploaded Successfully. Come Back Soon."
 
-@app.route('/register/<string:name>', methods = ['GET', 'POST'])
-def handle_request(name):
+@app.route('/register/<string:name>/', methods = ['GET', 'POST'])
+def register_request(name):
     files_ids = list(flask.request.files)
     print("\nNumber of Received Images : ", len(files_ids))
     image_num = 1
